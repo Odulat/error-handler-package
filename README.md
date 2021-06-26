@@ -8,13 +8,13 @@ Laravel error handler package
 Install Via Composer
 
 ``` bash
-$ composer require dulat/error-handler
+composer require dulat/error-handler
 ```
 
 Publish vendor
 
 ``` bash
-$ php artisan vendor:publish
+php artisan vendor:publish
 ```
 
 Migrate tables
