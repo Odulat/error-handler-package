@@ -8,7 +8,7 @@ Laravel error handler package
 Install Via Composer
 
 ``` bash
-$ composer require pyaesone17/lapse
+$ composer require dulat/error-handler
 ```
 
 Publish vendor
