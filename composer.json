@@ -15,5 +15,12 @@
         "psr-4": {
             "Dulat\\ErrorHandler\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dulat\\ErrorHandler\\ErrorHandlerServiceProvider"
+            ]
+        }
     }
 }
