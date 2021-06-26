@@ -1,0 +1,19 @@
+{
+    "name": "dulat/error-handler",
+    "description": "Laravel error handler package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dulat Orazymbetov",
+            "email": "odulati@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Dulat\\ErrorHandler\\": "src/"
+        }
+    }
+}
