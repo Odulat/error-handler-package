@@ -51,7 +51,7 @@
                 Laravel
             </div>
             <div class="col-6 col-md" style="word-break:break-all">
-                <a href="https://github.com/pyaesone17/lapse" target="_blank">https://github.com/pyaesone17/lapse </a>
+                <a href="https://github.com/pyaesone17/lapse" target="_blank">https://github.com/Odulat/error-handler-package </a>
             </div>
         </div>
     </div>

@@ -14,13 +14,13 @@
                 <div class="table">
                     <div class="row header">
                         <div class="cell">
-                            URL
-                        </div>
-                        <div class="cell">
-                            CLASS
-                        </div>
-                        <div class="cell">
                             TITLE
+                        </div>
+                        <div class="cell">
+                            FILE
+                        </div>
+                        <div class="cell">
+                            LINE
                         </div>
                         <div class="cell">
                             USER
@@ -30,22 +30,22 @@
                         </div>
                     </div>
 
-                    @foreach($exceptions as $lapse)
-                        <a class="row data" href="{{ route('detail',$lapse->id) }}">
-                            <div class="cell" data-title="URL">
-                                {{ $lapse->url }}
+                    @foreach($exceptions as $exception)
+                        <a class="row data" href="{{ route('detail',$exception->id) }}">
+                            <div class="cell" data-title="TITLE">
+                                {{ $exception->title }}
                             </div>
-                            <div class="cell" data-title="LAPSE CLASS">
-                                {{ $lapse->class }}
+                            <div class="cell" data-title="FILE">
+                                {{ $exception->file }}
                             </div>
-                            <div class="cell" data-title="LAPSE TITLE">
-                                {{ $lapse->title }}
-                            </div>
-                            <div class="cell" data-title="User">
-                                {{ $lapse->user_id or 'unknown' }}
+                            <div class="cell" data-title="LINE">
+                                {{ $exception->line }}
                             </div>
                             <div class="cell" data-title="User">
-                                {{ $lapse->created_at->format("D M Y h:i:s") }}
+                                {{ data_get($exception, 'user_id', 'unknown') }}
+                            </div>
+                            <div class="cell" data-title="User">
+                                {{ $exception->created_at->format("D M Y h:i:s") }}
                             </div>
                         </a>
                     @endforeach
