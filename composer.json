@@ -9,10 +9,9 @@
             "email": "odulati@gmail.com"
         }
     ],
-    "require": {
-        "php": ">=7.4",
-        "another-vendor/package": "1.*"
-    },
+    "version": "1.0.0",
+    "minimum-stability": "dev",
+    "require": {},
     "autoload": {
         "psr-4": {
             "Dulat\\ErrorHandler\\": "src/"

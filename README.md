@@ -24,7 +24,7 @@ php artisan migrate
 ```
 ## Usage
 
-After that register In the captureException method of App\Exceptions\Handler like this.
+After that register captureException method of App\Exceptions\Handler like this.
 
 
 ``` php
