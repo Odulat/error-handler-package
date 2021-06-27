@@ -9,7 +9,6 @@
             "email": "odulati@gmail.com"
         }
     ],
-    "version": "1.0.0",
     "minimum-stability": "dev",
     "require": {},
     "autoload": {
