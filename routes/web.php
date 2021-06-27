@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => 'Dulat\ErrorHandler\Http\Controllers'], function () {
+Route::group(['namespace' => 'Dulat\ErrorHandler\Http\Controllers', 'prefix' => 'exceptions'], function () {
     Route::get('/', 'HomeController@index')->name('index');
     Route::get('/detail/{id?}', 'HomeController@detail')->name('detail');
     Route::delete('/clear', 'HomeController@clear')->name('clear');
