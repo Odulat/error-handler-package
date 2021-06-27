@@ -43,3 +43,13 @@ After that register captureException method of App\Exceptions\Handler like this.
         ...  
     }
 ```
+
+To change list of receivers, write your email at `config/error-handler.php`
+```php
+return [
+    'send_email_to' => [
+        'example1@gmail.com',
+        'example2@gmail.com',
+    ]
+];
+```
